@@ -218,7 +218,6 @@ ul {
   position: fixed;
   top: mixins.rem(25px);
   &.sticky {
-
     top: 0;
     position: fixed !important;
     top: 0;
@@ -239,11 +238,11 @@ ul {
     }
   }
 
-  & .navbar-toggler{
+  & .navbar-toggler {
     color: #fff;
     outline: none;
     border-width: 1px;
-    &:focus{
+    &:focus {
       outline: none;
       border-width: 1px;
       border-color: #fff;
@@ -268,15 +267,14 @@ ul {
     border: 1px solid #c4c1c11a;
 
     backdrop-filter: blur(10px);
-    @include mixins.breakpoint(md){
+    @include mixins.breakpoint(md) {
       background-color: #8f04a15b;
     }
     & .nav-area {
       & ul {
         gap: mixins.rem(30px);
-       
-        & li.nav-item {
 
+        & li.nav-item {
           & .dropdown-toggle::after {
             color: #fff;
           }
@@ -285,28 +283,25 @@ ul {
             font-weight: 500;
             font-size: 14px;
             line-height: 100%;
-   
+
             color: #ffffff;
             border-radius: mixins.rem(34px);
             border-bottom: 1px solid transparent;
             transition: border 0.3s ease-in-out;
-            
-            @include mixins.breakpoint(md){
-             padding-left: 20px;
-             text-align: center;
+
+            @include mixins.breakpoint(md) {
+              padding-left: 20px;
+              text-align: center;
             }
             &.active {
               border-color: #ffffff75;
               transition: border 0.3s ease-in-out;
-            
 
-              @include mixins.breakpoint(md){
-              
+              @include mixins.breakpoint(md) {
               }
             }
             &:hover {
-              @include mixins.breakpoint(md){
-              
+              @include mixins.breakpoint(md) {
               }
               border-color: #ffffff75;
               transition: border 0.3s ease-in-out;
@@ -314,14 +309,13 @@ ul {
           }
 
           & .dropdown-menu {
-
             background-color: rgba(2, 31, 32, 0.418);
             backdrop-filter: blur(50px);
             border: none;
             padding: 0;
-            & li{
+            & li {
               padding: 0;
-              & .dropdown-item{
+              & .dropdown-item {
                 font-family: "DM Sans", sans-serif;
                 font-weight: 500;
                 padding: 10px 10px;
@@ -331,22 +325,20 @@ ul {
                 border-radius: mixins.rem(3px);
                 border-bottom: 1px solid transparent;
                 transition: border 0.3s ease-in-out;
-                &.active{
-                
+                &.active {
                   backdrop-filter: blur(10px);
                   background-color: transparent;
-                  
+
                   color: #fff;
                 }
-                &:hover{
-                backdrop-filter: blur(10px);
-                 background-color: transparent;
-                 
+                &:hover {
+                  backdrop-filter: blur(10px);
+                  background-color: transparent;
+
                   color: #fff;
                 }
               }
             }
-            
           }
         }
       }
@@ -354,8 +346,8 @@ ul {
       & .button-group {
         display: flex;
         gap: mixins.rem(12px);
-        
-        @include mixins.breakpoint(md){
+
+        @include mixins.breakpoint(md) {
           justify-content: center;
           width: 100%;
         }
@@ -363,15 +355,13 @@ ul {
           & img {
             width: mixins.rem(24px);
             height: mixins.rem(24px);
-            @include mixins.breakpoint(lg){
+            @include mixins.breakpoint(lg) {
               display: none;
             }
-            
           }
           &:last-child {
             background: transparent;
             backdrop-filter: none;
-
 
             & img {
               width: mixins.rem(26px);
@@ -470,16 +460,16 @@ ul {
     padding-top: 150px;
     padding-bottom: 100px;
     overflow: hidden;
-    @include mixins.breakpoint(sm){
+    @include mixins.breakpoint(sm) {
       padding-bottom: 70px;
     }
   }
-  @include mixins.breakpoint(sm){
+  @include mixins.breakpoint(sm) {
     & > .mb-5 {
       margin-bottom: 50px !important;
-     }
+    }
   }
- 
+
   & .title-1 {
     font-family: "Darker Grotesque", sans-serif;
     font-weight: 700;
@@ -488,10 +478,10 @@ ul {
     letter-spacing: -3px;
     text-align: center;
     color: #ffffff;
-    @include mixins.breakpoint(md){  
+    @include mixins.breakpoint(md) {
       font-size: 10vw;
     }
-    @include mixins.breakpoint(xs){  
+    @include mixins.breakpoint(xs) {
       font-size: 50px;
       line-height: 100%;
     }
@@ -505,19 +495,17 @@ ul {
     text-align: center;
     color: #ffffff;
     margin-bottom: 50px;
-    @include mixins.breakpoint(md){  
-    
+    @include mixins.breakpoint(md) {
       font-size: 7vw;
     }
-    @include mixins.breakpoint(xs){  
+    @include mixins.breakpoint(xs) {
       font-size: 40px;
       width: 68%;
       line-height: 100%;
     }
     & .brand {
-
       font-weight: 700;
-    
+
       background: -webkit-linear-gradient(
         #fcc188 0%,
         #7042d2 65.07%,
@@ -731,7 +719,6 @@ ul {
 
       @include mixins.breakpoint(sm) {
         width: 100%;
-
       }
       & img {
         border-radius: 32px;
@@ -741,7 +728,7 @@ ul {
         top: 50%;
         left: 50%;
         transform: translateX(-50%) translateY(-50%);
-       
+
         width: 100px;
         height: 100px;
         display: flex;
@@ -763,7 +750,6 @@ ul {
       width: 48%;
       @include mixins.breakpoint(sm) {
         width: 100%;
-        
       }
       & h2 {
         font-family: " Darker Grotesque", sans-serif;
@@ -773,22 +759,19 @@ ul {
         letter-spacing: -3px;
         color: #ffffff;
 
-   
         @include mixins.breakpoint(sm) {
           font-size: mixins.rem(32px);
           line-height: 140%;
           letter-spacing: 0;
         }
-    
+
         @include mixins.breakpoint(lg) {
           font-size: 4vw;
         }
-      
+
         & .brand {
-         
           font-weight: 700;
 
-         
           background: -webkit-linear-gradient(
             #fcc188 0%,
             #7042d2 65.07%,
@@ -832,7 +815,6 @@ ul {
       border: 1px solid rgba(218, 216, 216, 0.226);
       background-color: #c2c0c015;
       box-shadow: 0 0 5px #ffffff41;
-
 
       @include mixins.breakpoint(md) {
         width: 100%;
@@ -935,7 +917,6 @@ ul {
     background-repeat: no-repeat, no-repeat;
     background-size: cover;
 
-   
     & .row {
       gap: 20px;
     }
@@ -966,7 +947,7 @@ ul {
         align-items: center;
         text-align: center;
         animation: spin 20s linear infinite;
-       
+
         @include mixins.breakpoint(md) {
           width: 300px;
           height: 300px;
@@ -1086,9 +1067,7 @@ ul {
         @include mixins.breakpoint(md) {
           width: mixins.rem(150.88px);
           height: mixins.rem(150.88px);
-  
         }
-       
       }
     }
     @keyframes spin {
@@ -1122,11 +1101,10 @@ ul {
         & .brand {
           font-family: "Darker Grotesque", sans-serif;
           font-weight: 700;
-        
-          line-height: 88%;
-     
-          text-align: center;
 
+          line-height: 88%;
+
+          text-align: center;
 
           background: -webkit-linear-gradient(
             #fcc188 0%,
@@ -1135,8 +1113,6 @@ ul {
           );
           -webkit-background-clip: text;
           -webkit-text-fill-color: transparent;
-
-       
         }
       }
       & .paragraph {
@@ -1163,17 +1139,17 @@ ul {
   }
 }
 
+
 // feartured secction
 .featured-section {
   padding-top: 50px;
   padding-bottom: 50px;
   background-color: #000;
-overflow: hidden;
-@include mixins.breakpoint(lg) {
- 
-  padding: 0 15px;
-}
-  & .section-text {
+  overflow: hidden;
+  @include mixins.breakpoint(lg) {
+    padding: 0 15px;
+  }
+  &.section-text {
     width: 40%;
     margin: 0 auto;
     @include mixins.breakpoint(lg) {
@@ -1345,14 +1321,14 @@ overflow: hidden;
     }
   }
 }
+
 // gallery secction
 .gallery-section {
   padding-top: 50px;
   padding-bottom: 50px;
   background-color: #000;
- overflow: hidden;
+  overflow: hidden;
   & .section-text {
-
     width: 40%;
     margin: 0 auto;
     @include mixins.breakpoint(lg) {
@@ -1395,7 +1371,7 @@ overflow: hidden;
     background-repeat: no-repeat;
     background-position: top left;
     background-size: 650px;
-    
+
     .grid-container {
       display: flex;
       flex-wrap: wrap;
@@ -1406,11 +1382,9 @@ overflow: hidden;
       margin: 0 auto;
       break-inside: avoid; /* Prevent breaking across columns */
       @include mixins.breakpoint(lg) {
-    
         padding: 0 15px;
       }
       @include mixins.breakpoint(sm) {
-       
         padding: 0 15px;
       }
     }
@@ -1509,14 +1483,13 @@ overflow: hidden;
     overflow: hidden;
     & .company-info {
       @include mixins.breakpoint(sm) {
-        & .col-6{
+        & .col-6 {
           width: 100%;
           padding-top: 25px;
         }
       }
       & .logo {
         width: mixins.rem(112px);
-
       }
       & .social {
         display: flex;
