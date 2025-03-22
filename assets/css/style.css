@@ -1084,23 +1084,23 @@ ul {
     padding: 0 15px;
   }
 }
-.featured-section .section-text {
+.featured-section.section-text {
   width: 40%;
   margin: 0 auto;
 }
 @media (max-width: 1260px) {
-  .featured-section .section-text {
+  .featured-section.section-text {
     width: 60%;
     padding: 0 15px;
   }
 }
 @media (max-width: 768px) {
-  .featured-section .section-text {
+  .featured-section.section-text {
     width: 100%;
     padding: 0 15px;
   }
 }
-.featured-section .section-text h2 {
+.featured-section.section-text h2 {
   font-family: "Darker Grotesque", sans-serif;
   font-weight: 700;
   font-size: 56px;
@@ -1109,7 +1109,7 @@ ul {
   text-align: center;
   color: #fff;
 }
-.featured-section .section-text h2 span.text-effect-2 {
+.featured-section.section-text h2 span.text-effect-2 {
   font-family: "Darker Grotesque", sans-serif;
   font-weight: 700;
   font-size: 72px;
