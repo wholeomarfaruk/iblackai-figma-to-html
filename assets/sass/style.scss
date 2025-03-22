@@ -134,6 +134,22 @@ ul {
   }
 }
 
+.text-effect-2 {
+  font-family: "Darker Grotesque", sans-serif;
+  font-weight: 700;
+  font-size: 72px;
+  line-height: 88%;
+  letter-spacing: -3px;
+  text-align: center;
+  background: -webkit-linear-gradient(
+    #fcc188 0%,
+    #7042d2 65.07%,
+    #2e008e 100%
+  );
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 /* common css start ============================================ */
 
 /* Preloader
@@ -1542,3 +1558,109 @@ ul {
     }
   }
 }
+
+
+// terms of use page  Start ===================================== 
+
+// BreadCrumb Start ===================================== 
+#breadcrumb{
+  &.breadcrumb-section{
+    background-image: url(../images/bg/breadcrumb.png);
+
+    & .breadcrumb-area {
+      height: 500px;
+      & .title{
+        font-family: 'Darker Grotesque', sans-serif;
+        font-weight: 700;
+        font-size: 94px;
+        line-height: 88%;
+        letter-spacing: -3px;
+        text-align: center;
+        color: #FFFFFF;
+
+      }
+
+    }
+  }
+
+}
+
+// BreadCrumb End ===================================== 
+
+//content start =====================
+#terms{
+  &.terms-section{
+    background-color: #000;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    & .terms-content{
+      border-radius: 15px;
+      border: 1px solid #D387FF99;
+      backdrop-filter: bur(10px);
+      padding: 20px;
+      display: flex;
+      justify-content: start;
+      flex-direction: column;
+      gap: 10px;
+      & .effective-title{
+        font-family: Darker Grotesque;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 150%;
+        letter-spacing: 0px;
+        vertical-align: middle;
+        text-align: left;
+
+      }
+      & .item{
+        & .title{
+          font-family: Darker Grotesque;
+          font-weight: 700;
+          font-size: 40px;
+          line-height: 128%;
+          color: #D1D5DB;
+
+        }
+        & .paragraph{
+          font-family: 'DM Sans',sans-serif;
+          font-weight: 400;
+          font-size: 20px;
+          line-height: 150%;
+          
+          vertical-align: middle;
+          color: #9CA3AF;
+        }
+        & .list{
+          & li{
+            
+            font-family: 'DM Sans',sans-serif;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 20px;
+            vertical-align: middle;
+            color: #9CA3AF;
+            list-style: none;
+            &:before{
+              content:"·";
+           
+              background: -webkit-linear-gradient(240.94deg, rgba(255, 255, 255, 0.5) -7.37%, rgba(255, 255, 255, 0.1) 89.52%);
+              font-size: 50px;
+              
+            
+              vertical-align:middle;
+            
+
+           
+          
+              -webkit-background-clip: text;
+              -webkit-text-fill-color: transparent;
+
+            }
+          }
+        }
+      }
+    }
+  }
+}
+//content end===============
+// terms of use page  End ===================================== 
