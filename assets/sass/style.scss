@@ -1621,6 +1621,10 @@ ul {
           color: #D1D5DB;
 
         }
+        & .title2{
+          color:#D1D5DB;
+          font-size: 25px;
+        }
         & .paragraph{
           font-family: 'DM Sans',sans-serif;
           font-weight: 400;
@@ -1640,6 +1644,7 @@ ul {
             vertical-align: middle;
             color: #9CA3AF;
             list-style: none;
+            padding: 5px;
             &:before{
               content:"·";
            
