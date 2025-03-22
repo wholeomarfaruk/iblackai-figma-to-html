@@ -8,6 +8,8 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&display=swap");
 
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
 /* common css start =========================================== */
 * {
   margin: 0;
@@ -27,6 +29,14 @@ ul {
   margin-left: 0;
   margin-bottom: 0;
   padding-left: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
 }
 .container {
   width: 100%;
@@ -141,14 +151,24 @@ ul {
   line-height: 88%;
   letter-spacing: -3px;
   text-align: center;
-  background: -webkit-linear-gradient(
-    #fcc188 0%,
-    #7042d2 65.07%,
-    #2e008e 100%
-  );
+  background: -webkit-linear-gradient(#fcc188 0%, #7042d2 65.07%, #2e008e 100%);
 
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+.active-cat {
+  border: 1px solid rgba(199, 199, 199, 0.5058823529);
+  background: linear-gradient(
+    240.94deg,
+    rgba(255, 255, 255, 0.5) -7.37%,
+    rgba(255, 255, 255, 0.1) 89.52%
+  );
+  backdrop-filter: blur(10px);
+  & img {
+    width: mixins.rem(24px);
+    height: mixins.rem(24px);
+  }
 }
 /* common css start ============================================ */
 
@@ -253,6 +273,12 @@ ul {
       }
     }
   }
+  & .container-fluid {
+    @include mixins.breakpoint(sm) {
+      padding-left: 0 !important;
+      padding-right: 0 !important;
+    }
+  }
 
   & .navbar-toggler {
     color: #fff;
@@ -285,6 +311,18 @@ ul {
     backdrop-filter: blur(10px);
     @include mixins.breakpoint(md) {
       background-color: #8f04a15b;
+    }
+
+    & .logo {
+      max-width: 170px;
+      width: 170px;
+      @include mixins.breakpoint(sm) {
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+      }
+      @include mixins.breakpoint(xs) {
+        width: auto;
+      }
     }
     & .nav-area {
       & ul {
@@ -1155,7 +1193,6 @@ ul {
   }
 }
 
-
 // feartured secction
 .featured-section {
   padding-top: 50px;
@@ -1518,7 +1555,7 @@ ul {
     }
     & .quick-links {
       & h3 {
-        font-family: DM Sans;
+        font-family: "DM Sans", sans-serif;
         font-weight: 600;
         font-size: 18px;
         line-height: 150%;
@@ -1559,50 +1596,68 @@ ul {
   }
 }
 
+// terms of use page  Start =====================================
 
-// terms of use page  Start ===================================== 
-
-// BreadCrumb Start ===================================== 
-#breadcrumb{
-  &.breadcrumb-section{
+// BreadCrumb Start =====================================
+#breadcrumb {
+  &.breadcrumb-section {
     background-image: url(../images/bg/breadcrumb.png);
-
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
     & .breadcrumb-area {
       height: 500px;
-      & .title{
-        font-family: 'Darker Grotesque', sans-serif;
+      @include mixins.breakpoint(md) {
+        height: 50vh;
+      }
+
+      & .title {
+        font-family: "Darker Grotesque", sans-serif;
         font-weight: 700;
         font-size: 94px;
         line-height: 88%;
-        letter-spacing: -3px;
+        letter-spacing: -1px;
         text-align: center;
-        color: #FFFFFF;
+        color: #ffffff;
 
+        @include mixins.breakpoint(md) {
+          font-size: 7vw;
+        }
+        @include mixins.breakpoint(md) {
+          font-size: 7vw;
+          padding-top: 50px;
+        }
       }
-
     }
   }
-
 }
 
-// BreadCrumb End ===================================== 
+// BreadCrumb End =====================================
 
 //content start =====================
-#terms{
-  &.terms-section{
+#terms {
+  &.terms-section {
     background-color: #000;
     padding-top: 50px;
     padding-bottom: 50px;
-    & .terms-content{
+    padding-left: 15px;
+    padding-right: 15px;
+    & .terms-content {
       border-radius: 15px;
-      border: 1px solid #D387FF99;
+      border: 1px solid #d387ff2a;
       backdrop-filter: bur(10px);
+      background-color: #7042d21a;
       padding: 20px;
       display: flex;
       justify-content: start;
       flex-direction: column;
       gap: 10px;
-      & .effective-title{
+
+      @include mixins.breakpoint(xs) {
+        padding: 10px;
+        gap: 5px;
+      }
+      & .effective-title {
         font-family: Darker Grotesque;
         font-weight: 700;
         font-size: 20px;
@@ -1610,56 +1665,116 @@ ul {
         letter-spacing: 0px;
         vertical-align: middle;
         text-align: left;
-
       }
-      & .item{
-        & .title{
-          font-family: Darker Grotesque;
+      & .item {
+        & .heading-title {
+          font-family: "Darker Grotesque", sans-serif;
+          font-weight: 700;
+          font-size: 56px;
+          line-height: 125%;
+          letter-spacing: 0;
+          text-align: center;
+          color: #ffffff;
+          width: 70%;
+          margin: 0 auto;
+          @include mixins.breakpoint(md) {
+            width: 100%;
+            font-size: 32px;
+          }
+        }
+        & .heading-title2 {
+          font-family: "Darker Grotesque", sans-serif;
+          font-weight: 700;
+          font-size: 40px;
+          line-height: 125%;
+          letter-spacing: 0;
+          text-align: center;
+          color: #ffffff;
+          margin: 0 auto;
+          @include mixins.breakpoint(md) {
+            width: 100%;
+            font-size: 20px;
+          }
+        }
+        & .heading-imgbox {
+          padding: 15px;
+          @include mixins.breakpoint(sm) {
+            padding: 0px;
+          }
+
+          & img {
+            border-radius: 16px;
+            object-fit: contain;
+          }
+        }
+        & .title {
+          font-family: "Darker Grotesque", sans-serif;
           font-weight: 700;
           font-size: 40px;
           line-height: 128%;
-          color: #D1D5DB;
-
+          color: #d1d5db;
+          @include mixins.breakpoint(md) {
+            font-size: 25px;
+          }
         }
-        & .title2{
-          color:#D1D5DB;
+        & .title2 {
+          color: #d1d5db;
           font-size: 25px;
+          @include mixins.breakpoint(md) {
+            font-size: 18px;
+          }
+          @include mixins.breakpoint(xs) {
+            font-size: 16px;
+          }
         }
-        & .paragraph{
-          font-family: 'DM Sans',sans-serif;
+        & .paragraph {
+          font-family: "DM Sans", sans-serif;
           font-weight: 400;
           font-size: 20px;
           line-height: 150%;
-          
+
           vertical-align: middle;
-          color: #9CA3AF;
+          color: #9ca3af;
+          @include mixins.breakpoint(md) {
+            font-size: 16px;
+          }
+          @include mixins.breakpoint(xs) {
+            font-size: 12px;
+            line-height: 125%;
+          }
         }
-        & .list{
-          & li{
-            
-            font-family: 'DM Sans',sans-serif;
+        & .list {
+          & li {
+            font-family: "DM Sans", sans-serif;
             font-weight: 400;
             font-size: 20px;
             line-height: 20px;
             vertical-align: middle;
-            color: #9CA3AF;
+            color: #9ca3af;
             list-style: none;
             padding: 5px;
-            &:before{
-              content:"·";
-           
-              background: -webkit-linear-gradient(240.94deg, rgba(255, 255, 255, 0.5) -7.37%, rgba(255, 255, 255, 0.1) 89.52%);
-              font-size: 50px;
-              
-            
-              vertical-align:middle;
-            
+            @include mixins.breakpoint(md) {
+              font-size: 16px;
+            }
+            @include mixins.breakpoint(xs) {
+              font-size: 12px;
+              line-height: 16px;
+              padding: 3px;
+            }
+            &:before {
+              content: "·";
 
-           
-          
+              background: -webkit-linear-gradient(
+                240.94deg,
+                rgba(255, 255, 255, 0.5) -7.37%,
+                rgba(255, 255, 255, 0.1) 89.52%
+              );
+              font-size: 50px;
+
+              vertical-align: middle;
+
               -webkit-background-clip: text;
               -webkit-text-fill-color: transparent;
-
             }
           }
         }
@@ -1668,4 +1783,312 @@ ul {
   }
 }
 //content end===============
-// terms of use page  End ===================================== 
+// terms of use page  End =====================================
+
+//Blog page Start =====================================
+#blogs {
+  &.blogs {
+    padding: 50px 15px;
+    background-color: #000;
+    & .section-header {
+      max-width: 1100px;
+      & .title {
+        font-family: "Darker Grotesque", sans-serif;
+        font-weight: 700;
+        font-size: 56px;
+        line-height: 125%;
+        color: #d1d5db;
+        text-align: center;
+        @include mixins.breakpoint(md) {
+          font-size: 40px;
+        }
+      }
+      & .categories {
+        padding-top: 20px;
+        padding-bottom: 20px;
+        text-align: center;
+        & .btn {
+          background-color: #111827;
+          border-radius: 34px;
+          border-width: 1px;
+          padding-top: 8px;
+          padding-right: 10px;
+          padding-bottom: 8px;
+          padding-left: 10px;
+          border: 1px solid #4b5563fd;
+          backdrop-filter: blur(10px);
+          color: #fff;
+          margin: 6px 3px;
+
+          &.active {
+            border: 1px solid rgba(199, 199, 199, 0.5058823529);
+            background: linear-gradient(
+              240.94deg,
+              rgba(255, 255, 255, 0.5) -7.37%,
+              rgba(255, 255, 255, 0.1) 89.52%
+            );
+            backdrop-filter: blur(10px);
+            & img {
+              width: mixins.rem(24px);
+              height: mixins.rem(24px);
+            }
+          }
+
+          &:hover {
+            border-color: #7042d2;
+          }
+        }
+      }
+      & .search-box {
+        max-width: 664px;
+        gap: 5px;
+        border-radius: 10px;
+
+        padding-top: 12px;
+        padding-right: 10px;
+        padding-bottom: 12px;
+        padding-left: 10px;
+        margin: 20px auto;
+
+        border: 1px solid #4b5563fd;
+        background-color: #111827;
+        backdrop-filter: blur(10px);
+        display: flex;
+        align-items: center;
+
+        &:hover {
+          border-color: #7042d2;
+        }
+        & input {
+          background-color: transparent;
+          border: none;
+          color: #fff;
+          flex: 1;
+          &:focus {
+            outline: none;
+            border: none;
+          }
+          &::placeholder {
+            font-family: "Instrument Sans", sans-serif;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 100%;
+            letter-spacing: 0;
+          }
+        }
+        &:has(input:focus) {
+          border-color: #7042d2;
+        }
+      }
+    }
+
+    // card start
+    & .featured-blogs {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: space-between;
+      padding-top: 20px;
+      padding-bottom: 50px;
+      & .item {
+        width: calc(49.9% - 10px);
+        @include mixins.breakpoint(sm) {
+          width: 100%;
+        }
+        & .card {
+          gap: 21px;
+          border-radius: 24px;
+          border-width: 1px;
+          padding: 12px;
+          border: 1px solid #ffffff1c;
+          overflow: hidden;
+          display: flex;
+       
+          justify-content: space-around;
+          flex-direction: row;
+          align-items: center;
+          background: #7042d213;
+          backdrop-filter: blur(10px);
+          @include mixins.breakpoint(md) {
+            flex-direction: column;
+          }
+          & .thumbnail {
+            width: 40%;
+            
+            height: 100%;
+            @include mixins.breakpoint("md") {
+              width: 100%;
+             
+            }
+
+            & img{
+              border-radius: 24px;
+              object-fit: cover;
+              object-position: center;
+            
+              @include mixins.breakpoint("md") {
+                width: 100%;
+                height: 250px;
+              }
+            }
+          }
+          & .info {
+            width: 60%;
+
+            flex:1;
+            @include mixins.breakpoint(md) {
+              width: 100%;
+            }
+            & .date {
+              font-family: "Inter", sans-serif;
+              font-weight: 400;
+              font-size: 18px;
+              line-height: 100%;
+              letter-spacing: 0;
+              background: -webkit-linear-gradient(300deg, #4648FF 20%, #FF7262 50.09%, #FFAEA5 50.03%);
+              -webkit-background-clip: text;
+              -webkit-text-fill-color: transparent;
+              background-clip: text;
+             
+            }
+            & .title {
+              font-family: 'Darker Grotesque', sans-serif;
+              font-weight: 700;
+              font-size: 28px;
+              line-height: 104%;
+              letter-spacing: 0;
+              color: #ffffff;
+              margin-top: 20px;
+              margin-bottom: 20px;
+
+            }
+            & .excerpt {
+              font-family: 'DM Sans', sans-serif;
+              font-weight: 400;
+              font-size: 16px;
+              line-height: 128%;
+              letter-spacing: 0;
+              color: #D1D5DB;
+
+            }
+            & .btn {
+            }
+          }
+        }
+      }
+    }
+    // blog start
+    & .our-blog-title{
+      font-family: 'Darker Grotesque', sans-serif;
+      font-weight: 700;
+      font-size: 56px;
+      line-height: 125%;
+      letter-spacing: 0;
+      text-align: center;
+      color: #ffffff;
+
+      & span{
+
+        background: -webkit-linear-gradient(305.98deg, #4648FF 0%, #FF7262 65.09%, #FFAEA5 100.03%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+      }
+      
+    }
+    & .blogs {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: start;
+      padding-top: 20px;
+      padding-bottom: 50px;
+     
+      & .item {
+        width: calc(24.5% - 10px);
+        @include mixins.breakpoint(sm) {
+          width: 100%;
+        }
+        & .card {
+          gap: 21px;
+          border-radius: 24px;
+          border-width: 1px;
+          padding: 12px;
+          border: 1px solid #ffffff1c;
+          overflow: hidden;
+          display: flex;
+       
+          justify-content: space-around;
+          flex-direction: column;
+          align-items: center;
+          background: #7042d213;
+          backdrop-filter: blur(10px);
+          @include mixins.breakpoint(md) {
+            flex-direction: column;
+          }
+          & .thumbnail {
+            width: 100%;
+            
+            height: 181px;
+          
+@include mixins.breakpoint("sm") {
+  height: auto;
+  max-height: 250px;
+}
+            & img{
+              border-radius: 24px;
+              object-fit: cover;
+              object-position: center;
+              @include mixins.breakpoint("sm") {
+                height: auto;
+                max-height: 250px;
+              }
+            
+            }
+          }
+          & .info {
+            width: 100%;
+
+           
+           
+            & .date {
+              font-family: "Inter", sans-serif;
+              font-weight: 400;
+              font-size: 18px;
+              line-height: 100%;
+              letter-spacing: 0;
+              background: -webkit-linear-gradient(300deg, #4648FF 20%, #FF7262 50.09%, #FFAEA5 50.03%);
+              -webkit-background-clip: text;
+              -webkit-text-fill-color: transparent;
+              background-clip: text;
+             
+            }
+            & .title {
+              font-family: 'Darker Grotesque', sans-serif;
+              font-weight: 700;
+              font-size: 22px;
+              line-height: 104%;
+              letter-spacing: 0;
+              color: #ffffff;
+              margin-top: 20px;
+              margin-bottom: 20px;
+
+            }
+            & .excerpt {
+              font-family: 'DM Sans', sans-serif;
+              font-weight: 400;
+              font-size: 16px;
+              line-height: 128%;
+              letter-spacing: 0;
+              color: #D1D5DB;
+
+            }
+            & .btn {
+            }
+          }
+        }
+      }
+    }
+  }
+}
+//Blog page End =====================================
