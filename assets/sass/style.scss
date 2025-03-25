@@ -229,6 +229,23 @@ button:focus {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+.text-effect-3 {
+  font-family: "Darker Grotesque", sans-serif;
+  font-weight: 700;
+  font-size: 72px;
+  line-height: 88%;
+  letter-spacing: -3px;
+  text-align: center;
+  background: -webkit-linear-gradient(
+    300deg,
+    #4648ff 20%,
+    #ff7262 50.09%,
+    #ffaea5 50.03%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
 
 .active-cat {
   border: 1px solid rgba(199, 199, 199, 0.5058823529);
@@ -701,7 +718,7 @@ button:focus {
   & .tool-form {
     background-color: rgba(255, 255, 255, 0.212);
     backdrop-filter: blur(3px);
-    padding: 40px 50px;
+    padding: 50px 50px 30px 50px;
     border-radius: 34px;
     box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.1);
     @include mixins.breakpoint(sm) {
@@ -734,7 +751,6 @@ button:focus {
       & select {
         position: absolute;
 
-       
         right: 10px;
         top: 50%;
         transform: translateY(-50%);
@@ -754,11 +770,42 @@ button:focus {
           background-color: #000;
         }
       }
-     
+      & button {
+        position: absolute;
+
+        right: 10px;
+        top: 50%;
+        transform: translateY(-50%);
+        background-color: transparent;
+        border: none;
+        color: #fff;
+        padding: 5px 10px;
+        outline: none;
+        @include mixins.breakpoint(sm) {
+          width: 33px;
+          height: 100%;
+          text-align: center;
+          margin-right: -9px;
+          border-radius: 10px;
+
+        }
+        & span{
+          @include mixins.breakpoint(sm) {
+           display: none;
+  
+          }
+        }
+        &:focus {
+          
+        }
+        & option {
+          background-color: #000;
+        }
+      }
+
       &:has(input:focus) {
         border-color: #ffffff7c;
       }
-
     }
     & .expend-options {
       border: 1px solid #ffffff1a;
@@ -1487,7 +1534,7 @@ button:focus {
   @include mixins.breakpoint(lg) {
     padding: 0 15px;
   }
-  &.section-text {
+  & .section-text {
     width: 40%;
     margin: 0 auto;
     @include mixins.breakpoint(lg) {
@@ -1844,7 +1891,7 @@ button:focus {
         font-weight: 600;
         font-size: 18px;
         line-height: 150%;
-        letter-spacing: -2px;
+        letter-spacing: 0;
         vertical-align: middle;
         color: #fff;
       }
@@ -1873,7 +1920,7 @@ button:focus {
         font-weight: 400;
         font-size: 16px;
         line-height: 150%;
-        letter-spacing: -2%;
+        letter-spacing: 0;
         vertical-align: middle;
         color: #d1d5db;
       }
@@ -2413,3 +2460,386 @@ button:focus {
 }
 
 //Faq page End =====================================
+//contact us page start =====================================
+
+#contact {
+  &.contact-section {
+    background-color: #000000;
+    padding: 60px 15px;
+
+    & .contact-area {
+      background: #0b011156;
+      border-radius: 10px;
+      padding: 25px 80px;
+      backdrop-filter: blur(10px);
+      border: 1px solid rgba(126, 14, 173, 0.56818);
+      @include mixins.breakpoint(md) {
+        padding: 40px 20px;
+      }
+
+      & .contact-info {
+        height: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+        @include mixins.breakpoint(md) {
+          padding-bottom: 20px;
+        }
+
+        & .first {
+          & .title {
+            font-family: Darker Grotesque;
+            font-weight: 700;
+            font-size: 40px;
+            line-height: 128%;
+            color: #ffffff;
+            @include mixins.breakpoint(md) {
+              font-size: 24px;
+              line-height: 100%;
+            }
+          }
+          & .text {
+            font-family: "DM Sans", sans-serif;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 150%;
+            vertical-align: middle;
+            color: #9ca3af;
+            width: 70%;
+            margin-top: 10px;
+            @include mixins.breakpoint(md) {
+              font-size: 16px;
+              line-height: 120%;
+              width: 100%;
+            }
+          }
+        }
+        & .middle {
+          margin-top: 20px;
+          & .contact-list {
+            & li {
+              font-family: "DM Sans", sans-serif;
+              font-weight: 400;
+              font-size: 20px;
+              line-height: 150%;
+              vertical-align: middle;
+              color: #9ca3af;
+              margin-bottom: 25px;
+              & a {
+                font-family: "DM Sans", sans-serif;
+                font-weight: 400;
+                font-size: 20px;
+                line-height: 150%;
+                vertical-align: middle;
+                color: #9ca3af;
+                &:hover {
+                  color: #fff;
+                  text-decoration: underline;
+                }
+              }
+              & i {
+                color: #fff;
+                margin-right: 10px;
+                line-height: 150%;
+              }
+            }
+          }
+        }
+        & .end {
+          @include mixins.breakpoint(md) {
+            display: none;
+          }
+          & .social {
+            & ul {
+              & li {
+                display: inline-block;
+                & a {
+                  width: 32px;
+                  height: 32px;
+                  border-radius: 50%;
+                  color: #fff;
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+                  margin-right: 10px;
+                  border: 1px solid rgba(226, 223, 223, 0.192);
+                  transition: all 0.3s ease-in-out;
+                  & i {
+                    color: #fff;
+                    font-size: 16px;
+                  }
+                  &:hover {
+                    transform: scale(1.2);
+                    transition: all 0.3s ease-in-out;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.form {
+  border: 1px solid rgba(199, 199, 199, 0.5058823529);
+  border-radius: 10px;
+  padding: 25px;
+
+  background: linear-gradient(
+    240.94deg,
+    rgba(255, 255, 255, 0.5) -7.37%,
+    rgba(255, 255, 255, 0.1) 89.52%
+  );
+
+  backdrop-filter: blur(5px);
+
+  & fieldset {
+    display: flex;
+    flex-wrap: wrap;
+
+    & label {
+      font-family: "DM Sans", sans-serif;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 128%;
+      letter-spacing: 0;
+      color: #d1d5db;
+      width: 100%;
+      margin-bottom: 8px;
+    }
+    & input {
+      flex: 1;
+      border-radius: 10px;
+      padding: 16px 25px;
+
+      border: 1px solid rgba(199, 199, 199, 0.5058823529);
+      font-family: "Instrument Sans", sans-serif;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 100%;
+      letter-spacing: 0;
+      color: #ffffff;
+
+      background: transparent;
+      &:focus {
+        border-color: #ffffff;
+      }
+    }
+    & textarea {
+      background: transparent;
+      flex: 1;
+      border-radius: 10px;
+      padding: 16px 25px;
+
+      border: 1px solid rgba(199, 199, 199, 0.5058823529);
+      font-family: "Instrument Sans", sans-serif;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 100%;
+      letter-spacing: 0;
+      color: #ffffff;
+      &:focus {
+        border-color: #ffffff;
+      }
+    }
+  }
+  & .btn-area {
+    text-align: center;
+    & .btn {
+      display: inline;
+      margin: 0 auto;
+    }
+
+    // align-items: center;
+  }
+}
+
+//contact us page end =====================================
+//Pricing page start =====================================
+#pricing {
+  &.pricing-section {
+    background-color: #000000;
+    padding: 60px 15px;
+    & .pricing-box {
+      display: flex;
+      gap: 20px;
+      justify-content: center;
+      align-items: flex-start;
+      flex-wrap: wrap;
+      & .pricing-card {
+        border-radius: 24px;
+
+        padding: 18px 24px;
+        width: 32%;
+        background-color: #0e011a;
+        box-shadow: 0px 4px 8px -1px #0d0d1205;
+
+        box-shadow: 0px 5px 10px -2px #0d0d120a;
+
+        backdrop-filter: blur(4px);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        height: auto;
+        @include mixins.breakpoint(md) {
+          width: 48%;
+        }
+        @include mixins.breakpoint(sm) {
+          width: 100%;
+        }
+        & .title {
+          font-family: "Darker Grotesque", sans-serif;
+          font-weight: 600;
+          font-size: 30px;
+          line-height: 150%;
+          letter-spacing: 0;
+          text-align: left;
+        }
+        & .price {
+          font-family: "Darker Grotesque", sans-serif;
+          font-weight: 600;
+          font-size: 40px;
+          line-height: 130%;
+          letter-spacing: 0px;
+          color: #ffffff;
+
+          & .text-tiny {
+            font-family: "Darker Grotesque", sans-serif;
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 135%;
+            letter-spacing: 0;
+            color: #9ca3af;
+            padding-left: 5px;
+          }
+        }
+        & .description {
+          font-family: "DM Sans", sans-serif;
+          font-weight: 400;
+          font-size: 18px;
+          line-height: 150%;
+          letter-spacing: 0px;
+          vertical-align: middle;
+          color: #9ca3af;
+        }
+        & .inclusions {
+          & ul {
+            & li {
+              font-family: "DM Sans", sans-serif;
+              font-weight: 400;
+              font-size: 18px;
+              line-height: 150%;
+              letter-spacing: 0;
+              vertical-align: middle;
+              color: #9ca3af;
+
+              & i {
+                color: #fff;
+                padding: 5px 6px;
+                border-radius: 50%;
+                // border: 1px solid rgba(255, 255, 255, 0.1);
+                font-size: 12px;
+                margin-right: 10px;
+                background-color: #ffffff1a;
+              }
+            }
+          }
+        }
+        & .btn-area {
+          padding: 15px 0px;
+          & .btn {
+            width: 100%;
+            color: #ffffff;
+
+            border-radius: 16px;
+            border-width: 1px;
+            padding-top: 16px;
+            padding-right: 24px;
+            padding-bottom: 16px;
+            padding-left: 24px;
+            box-shadow: 0px 1px 2px 0px #0d0d120f;
+
+            backdrop-filter: blur(20px);
+          }
+        }
+        & .tags {
+          & span {
+            font-family: "DM Sans", sans-serif;
+            font-weight: 400;
+            font-size: 11px;
+            line-height: 150%;
+            letter-spacing: 0px;
+            display: inline-block;
+            margin: 4px 2px;
+            padding-right: 5px;
+            padding-left: 5px;
+            padding-top: 3px;
+            padding-bottom: 3px;
+            color: #fff;
+            border-radius: 7px;
+          }
+        }
+        &.card-white {
+          background-color: #ffffff;
+
+          & .price {
+            color: #000000;
+            & .text-tiny {
+              color: #666d80;
+            }
+          }
+
+          & .description {
+            color: #666d80;
+          }
+          & .tags {
+            & span {
+              background: linear-gradient(
+                105.98deg,
+                #4648ff 0%,
+                #ff7262 65.09%,
+                #ffaea5 100.03%
+              );
+            }
+          }
+          & .inclusions {
+            & ul {
+              & li {
+                color: #666d80;
+                & i {
+                  background-color: #0000001a;
+                  color: #818898;
+                }
+              }
+            }
+          }
+
+          & .btn-area {
+            & .btn {
+              background-color: #0d0d12;
+              border-color: #0d0d12;
+              transition: all 0.5s ease-in-out;
+              &:hover {
+                background-color: #0e0324;
+                border-color: #2e008e;
+
+                & span {
+                  transition: all 0.5s ease-in-out;
+                  background: -webkit-linear-gradient(
+                    300deg,
+                    #4648ff 20%,
+                    #ff7262 50.09%,
+                    #ffaea5 50.03%
+                  );
+                  -webkit-background-clip: text;
+                  -webkit-text-fill-color: transparent;
+                  background-clip: text;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+//Pricing page end =====================================
