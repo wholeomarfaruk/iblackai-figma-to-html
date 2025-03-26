@@ -1572,7 +1572,7 @@ button:focus {
     }
   }
   .featured-area {
-    .box {
+    & .box {
       display: flex;
       justify-content: start;
       flex-wrap: wrap;
@@ -1581,7 +1581,8 @@ button:focus {
       @include mixins.breakpoint(md) {
         justify-content: center;
       }
-      .item {
+      
+      & .item {
         width: 31% !important;
 
         height: mixins.rem(312px);
