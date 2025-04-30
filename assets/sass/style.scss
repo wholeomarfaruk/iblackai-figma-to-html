@@ -948,6 +948,7 @@ button:focus {
   width: mixins.rem(332px);
   height: mixins.rem(328px);
   position: relative;
+  border-radius: 20px;
 }
 
 @media (max-width: 500px) {

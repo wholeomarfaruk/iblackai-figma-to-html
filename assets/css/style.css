@@ -852,6 +852,7 @@ button:focus {
   width: 20.75rem;
   height: 20.5rem;
   position: relative;
+  border-radius: 20px;
 }
 
 @media (max-width: 500px) {
