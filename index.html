@@ -229,7 +229,7 @@
           <div class="row py-1 px-1 justify-content-center align-items-center">
             <div class="col-md-6 border-1 video">
               <img src="assets/images/Home - Iblackai 1 (1).png" alt="" />
-              <a class="various fancybox play" href="https://www.youtube.com/embed/-oOoTIuoL8M?si=hDZqU1yMS4vrasOM?autoplay=1" data-fancybox  data-fancybox-type="iframe" ><i class="fa-solid fa-play"></i></a>
+              <a class="various fancybox play" href="" data-fancybox  data-src="#video-popup" ><i class="fa-solid fa-play"></i></a>
             </div>
             <div class="col-md-6 text">
               <h2>
@@ -244,6 +244,12 @@
           </div>
         </div>
       </section>
+      <div style="display: none;" id="video-popup">
+        <video controls autoplay loop muted playsinline style="width:100%; height:auto;">
+          <source src="assets/video/ai-image-generating.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
      <!-- feature section start  -->
 
       <section id="featured" class="featured-section">
@@ -394,7 +400,7 @@
                 <img src="assets/images/gallery/12.png" alt="" />
               </div>
               <div class="item">
-                <img src="assets/images/gallery/13.png" alt="" />
+                <img src="assets/images/gallery/23.jpeg" alt="" />
               </div>
             </div>
             <div class="grid-item column-4">
@@ -595,6 +601,7 @@
       // maxWidth: 800,
       // maxHeight: 600,
       fitToView: true,
+
       width: '80%',
       height: '80%',
       autoSize: false,
