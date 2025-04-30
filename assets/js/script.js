@@ -23,6 +23,17 @@ var TrandingSlider = new Swiper('.tranding-slider', {
   navigation: {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
+  },
+  breakpoints: {
+    0: {
+      slidesPerView: 1.5,
+     
+    },
+    576: {
+      slidesPerView: "auto",
+     
+    },
+
   }
 });
   

@@ -952,12 +952,13 @@ button:focus {
 
 @media (max-width: 500px) {
   .tranding-slide {
-    width: 28rem !important;
-    height: 36rem !important;
-  }
+    width: inherit;
+    height: 25rem !important;
+    overflow: hidden;
+}
   .tranding-slide .tranding-slide-img img {
-    width: 28rem !important;
-    height: 36rem !important;
+    width: 100% !important;
+    height: 25rem !important;
   }
 }
 
