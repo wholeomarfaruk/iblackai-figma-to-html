@@ -9,52 +9,23 @@ var TrandingSlider = new Swiper('.tranding-slider', {
   grabCursor: true,
   centeredSlides: true,
   loop: true,
-  initialSlide: 1,
+  slidesPerView: 'auto',
   coverflowEffect: {
     rotate: 0,
     stretch: 0,
-    depth: 80,
+    depth: 100,
     modifier: 2.5,
   },
   pagination: {
     el: '.swiper-pagination',
     clickable: true,
   },
-  mousewheel: true,
   navigation: {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
-  },
-  breakpoints: {
-    0: {
-      slidesPerView: 5, // ✅ Show 3 even on small devices
-
-
-    },
-    500: {
-      slidesPerView: 3, // ✅ Show 3 even on small devices
-
-
-    },
-    768: {
-      slidesPerView: 3,
-
-    },
-    1024: {
-      slidesPerView: 7,
-
-
-    }
-  },
-  on: {
-    click: function(swiper, event) {
-      const clickedSlide = swiper.clickedSlide;
-      if (clickedSlide) {
-        swiper.slideTo(swiper.clickedIndex, 500);
-      }
-    }
   }
 });
+  
 
 
 
