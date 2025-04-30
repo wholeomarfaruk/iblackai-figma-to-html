@@ -930,10 +930,18 @@ button:focus {
   position: relative;
 }
 
+@media (max-width: 768px) {
+  .swiper.tranding-slider {
+    left: 0px;
+}
+}
+
 @media (max-width: 500px) {
   #tranding .tranding-slider {
     height: 45rem;
+    
   }
+
 }
 
 .tranding-slide {
@@ -944,12 +952,12 @@ button:focus {
 
 @media (max-width: 500px) {
   .tranding-slide {
-    width: 28rem !important;
-    height: 36rem !important;
-  }
+    width: 19rem !important;
+    height: 27rem !important;
+}
   .tranding-slide .tranding-slide-img img {
-    width: 28rem !important;
-    height: 36rem !important;
+    width: 100% !important;
+    height: 27rem !important;
   }
 }
 
@@ -960,37 +968,6 @@ button:focus {
   object-fit: cover;
 }
 
-.tranding-slide .tranding-slide-content {
-  position: absolute;
-  left: 0;
-  top: 0;
-  right: 0;
-  bottom: 0;
-}
-
-.tranding-slide-content .food-price {
-  position: absolute;
-  top: 2rem;
-  right: 2rem;
-  color: var(--white);
-}
-
-.tranding-slide-content .tranding-slide-content-bottom {
-  position: absolute;
-  bottom: 2rem;
-  left: 2rem;
-  color: var(--white);
-}
-
-.food-rating {
-  padding-top: 1rem;
-  display: flex;
-  gap: 1rem;
-}
-
-.rating ion-icon {
-  color: var(--primary);
-}
 
 .swiper-slide-shadow-left,
 .swiper-slide-shadow-right {
@@ -1070,6 +1047,7 @@ button:focus {
 .tranding-slider-control .swiper-pagination .swiper-pagination-bullet-active {
   background: var(--primary);
 }
+
 
 .actiontogen {
   box-shadow: 0 0 20px 20px #000;

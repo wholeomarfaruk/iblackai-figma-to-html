@@ -5,36 +5,57 @@ $(window).ready(function () {
 });
 
 var TrandingSlider = new Swiper('.tranding-slider', {
-    effect: 'coverflow',
-    grabCursor: true,
-    centeredSlides: true,
-    loop: true,
-    slidesPerView: 7,
-    initialSlide: 3, // Center the 4th slide (0-based index)
-    coverflowEffect: {
-      rotate: 0,
-      stretch: 0,
-      depth: 80,
-      modifier: 2.5,
+  effect: 'coverflow',
+  grabCursor: true,
+  centeredSlides: true,
+  loop: true,
+  initialSlide: 1,
+  coverflowEffect: {
+    rotate: 0,
+    stretch: 0,
+    depth: 80,
+    modifier: 2.5,
+  },
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+  },
+  mousewheel: true,
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+  breakpoints: {
+    0: {
+      slidesPerView: 5, // ✅ Show 3 even on small devices
+
+
     },
-    pagination: {
-      el: '.swiper-pagination',
-      clickable: true,
+    500: {
+      slidesPerView: 3, // ✅ Show 3 even on small devices
+
+
     },
-    mousewheel: true,
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
+    768: {
+      slidesPerView: 3,
+
     },
-    on: {
-      click: function(swiper, event) {
-        const clickedSlide = swiper.clickedSlide;
-        if (clickedSlide) {
-          swiper.slideTo(swiper.clickedIndex, 500);
-        }
+    1024: {
+      slidesPerView: 7,
+
+
+    }
+  },
+  on: {
+    click: function(swiper, event) {
+      const clickedSlide = swiper.clickedSlide;
+      if (clickedSlide) {
+        swiper.slideTo(swiper.clickedIndex, 500);
       }
     }
-  });
+  }
+});
+
 
 
   

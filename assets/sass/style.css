@@ -190,7 +190,6 @@ ul {
   top: 1.5625rem;
 }
 #header.sticky {
-  top: 0;
   position: fixed !important;
   top: 0;
   left: 0;
@@ -1492,6 +1491,7 @@ ul {
   flex-direction: column;
   gap: 10px;
 }
+
 #terms.terms-section .terms-content .effective-title {
   font-family: Darker Grotesque;
   font-weight: 700;
@@ -1501,6 +1501,7 @@ ul {
   vertical-align: middle;
   text-align: left;
 }
+
 #terms.terms-section .terms-content .item .title {
   font-family: Darker Grotesque;
   font-weight: 700;
