@@ -564,6 +564,128 @@ button:focus {
     Header Section CSS END
   ===================================================== */
 /* =====================================================
+    gallery_2 Section CSS START
+  ===================================================== */
+.gallery_2{
+  background-color: black;
+  padding-bottom: 1px;
+}
+.g_h4{
+    font-size: 28px;
+    font-family: "Poppins", sans-serif;
+    color: white;
+    font-weight: 500;
+}
+.breadcrumb-item a{
+    color: #0d6efd;
+    font-size: 18px;
+}
+.breadcrumb-item.active {
+    color: #0d6efd;
+}
+/*button*/
+.btn-md{
+    border-radius: 5px;
+    font-size: 18px;
+    padding: 13px 15px;
+    background-color: #5021c0;
+}
+.counter-card-info{
+    font-size: 35px;
+    color: white;
+    text-align: center;
+}
+.counter-card-title{
+    font-size: 19px;
+    color: #2e008e;
+}
+.counter-card-number{
+  color: #2e008e;
+}
+.counter-card-icon_2{
+ border: 1px solid #2e008e;
+ border-radius: 5px;
+ width: 100px;
+ height: 100px;
+ position: relative;
+ top: -100px;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+}
+.img_icon_1{
+  font-size: 50px;
+  
+}
+.img_icon_2{
+
+}
+.counter-card-btn-outline{
+  font-size: 18px;
+  color: #5021c0;
+}
+.upgrade_1{
+  text-align: right;
+  position: relative;
+  top: -200px;
+}
+.your_img{
+  color: white;
+}
+/*form*/
+.form-search{
+  font-size: 23px;
+}
+.form-search input{
+  border-radius: 10px;
+  border: none;
+}
+.icon{
+  border: none;
+}
+ @media (max-width: 576){}
+ @media (max-width: 767){}
+ @media (max-width: 991){}
+ @media (max-width: 1399){}
+ @media (max-width: 1400) {}
+ 
+ @media (max-width: 1024){ 
+  .gallery_2{
+  padding-bottom: 1px;
+}
+  .btn-md{
+    font-size: 16px;
+}
+.img_icon_1 {
+    font-size: 45px;
+}
+.counter-card-icon_2 {
+    width: 85px;
+    height: 85px;
+    top: -94px;
+}
+.counter-card-title {
+    font-size: 18px;
+}
+.counter-card-info {
+    font-size: 30px;
+}
+.counter-card-btn-outline {
+    font-size: 17px;
+}
+.form-search {
+  font-size: 18px;
+}
+} 
+
+
+
+
+/* =====================================================
+    gallery_2 Section CSS END
+  ===================================================== */
+
+/* =====================================================
     Hero Section CSS START
   ===================================================== */
 #hero_sec.hero_sec {
@@ -1796,14 +1918,14 @@ button:focus {
   text-align: center;
   color: #ffffff;
 }
-@media (max-width: 1260px) {
+@media (max-width: 992px) {
   #breadcrumb.breadcrumb-section .breadcrumb-area .title {
     font-size: 7vw;
   }
 }
 @media (max-width: 992px) {
   #breadcrumb.breadcrumb-section .breadcrumb-area .title {
-    font-size: 11vw;
+    font-size: 7vw;
     padding-top: 50px;
   }
 }
@@ -2648,56 +2770,39 @@ header .navbar .nav-area .button-group .dropdown-menu li a img {
 .gallery-page .breadcrumb-area .title {
   padding-top: 250px !important;
 }
-@media (max-width: 992px) {
-  .gallery-page .breadcrumb-area .title {
-    padding-top: 50px !important;
-  }
-}
-.gallery-page .breadcrumb-area .form, .gallery-page .gallery-section .form {
+.gallery-page .breadcrumb-area .form {
   width: 70%;
 }
 @media (max-width: 992px) {
-  .gallery-page .breadcrumb-area .form, .gallery-page .gallery-section .form {
+  .gallery-page .breadcrumb-area .form {
     width: 100%;
   }
 }
-.gallery-page .breadcrumb-area .form .search-box, .gallery-page .gallery-section .form .search-box {
+.gallery-page .breadcrumb-area .form .search-box {
   display: flex;
   justify-content: space-between;
   align-items: center;
   gap: 5px;
 }
-.gallery-page .breadcrumb-area .form .search-box .search-btn, .gallery-page .gallery-section .form .search-box .search-btn {
+.gallery-page .breadcrumb-area .form .search-box .search-btn {
   width: 200px;
 }
 @media (max-width: 992px) {
-  .gallery-page .breadcrumb-area .form .search-box .search-btn, .gallery-page .gallery-section .form .search-box .search-btn {
+  .gallery-page .breadcrumb-area .form .search-box .search-btn {
     width: fit-content;
   }
 }
-.gallery-page .breadcrumb-area .form .search-box .search-btn .btn, .gallery-page .gallery-section .form .search-box .search-btn .btn {
+.gallery-page .breadcrumb-area .form .search-box .search-btn .btn {
   padding: 16px 25px;
   border-radius: 10px;
 }
 @media (max-width: 992px) {
-  .gallery-page .breadcrumb-area .form .search-box .search-btn .btn, .gallery-page .gallery-section .form .search-box .search-btn .btn {
+  .gallery-page .breadcrumb-area .form .search-box .search-btn .btn {
     padding: 16px 15px;
   }
 }
-.gallery-page .breadcrumb-area .form .search-box .search-input, .gallery-page .gallery-section .form .search-box .search-input {
+.gallery-page .breadcrumb-area .form .search-box .search-input {
   flex-grow: 1;
-}
-.gallery-page #gallery.gallery-section .form {
-  margin: auto;
-  padding: 18px 20px 5px 20px;
-  border: none;
-  border-radius: 50px;
-}
-.gallery-page #gallery.gallery-section .form fieldset input {
-  border-radius: 50px;
-}
-.gallery-page #gallery.gallery-section .form button.btn, .gallery-page #gallery.gallery-section .form .search-btn {
-  border-radius: 50px;
 }
 .gallery-page #gallery .gallery-area .grid-container {
   display: grid;
@@ -2765,49 +2870,6 @@ header .navbar .nav-area .button-group .dropdown-menu li a img {
 }
 .gallery-page #gallery .gallery-area .grid-container .grid-item:nth-child(even) .item:nth-child(n+6) {
   display: none;
-}
-
-.counter {
-  margin: 30px 0;
-  padding: 20px;
-}
-@media (max-width: 992px) {
-  .counter {
-    row-gap: 20px;
-  }
-}
-
-.counter .item {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  padding: 10px;
-  border-radius: 10px;
-  background-color: rgba(248, 249, 250, 0.3411764706);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(5px);
-}
-
-.counter .item .icon i {
-  font-size: 8rem;
-  margin-right: 10px;
-  color: rgba(248, 249, 250, 0.3411764706);
-}
-@media (max-width: 992px) {
-  .counter .item .icon i {
-    font-size: 5rem;
-  }
-}
-
-.counter .item .content {
-  flex-grow: 1;
-}
-
-.counter .item .content .title {
-  font-size: 3rem;
-  margin: 0;
-  padding-top: 0 !important;
 }
 
 /*# sourceMappingURL=style.css.map */

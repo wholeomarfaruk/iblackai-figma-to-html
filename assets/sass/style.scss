@@ -1941,11 +1941,11 @@ button:focus {
         text-align: center;
         color: #ffffff;
 
-        @include mixins.breakpoint(md) {
+        @include mixins.breakpoint(lg) {
           font-size: 7vw;
         }
         @include mixins.breakpoint(md) {
-          font-size: 7vw;
+          font-size: 11vw;
           padding-top: 50px;
         }
       }
@@ -2876,9 +2876,12 @@ header .navbar .nav-area .button-group .dropdown-menu li a img{
   min-height: 500px;
   & .title{
     padding-top: 250px !important;
+    @include mixins.breakpoint(md) {
+      padding-top: 50px !important;
+    }
   }
 }
- & .breadcrumb-area .form{
+ & .breadcrumb-area .form , & .gallery-section .form{
   width: 70%;
   @include mixins.breakpoint('md') {
     width: 100%;
@@ -2911,6 +2914,19 @@ header .navbar .nav-area .button-group .dropdown-menu li a img{
 }
 
  & #gallery{
+&.gallery-section .form{
+  margin: auto;
+  padding: 18px 20px 5px 20px;
+  border: none;
+  border-radius: 50px;
+  
+  & fieldset input {
+    border-radius: 50px;
+}
+& button.btn , & .search-btn{
+  border-radius: 50px;
+}
+}
   & .gallery-area{
     & .grid-container{
         display: grid;
@@ -2978,4 +2994,46 @@ header .navbar .nav-area .button-group .dropdown-menu li a img{
   }
  }
 }
+// counter
+.counter {
+
+  margin: 30px 0;
+  padding: 20px;
+  @include mixins.breakpoint(md) {
+    row-gap: 20px;
+  }
+
+}
+
+.counter .item {
+display: flex;
+align-items: center;
+justify-content: center;
+text-align: center;
+padding: 10px;
+border-radius: 10px;
+background-color: #f8f9fa57;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(5px);
+}
+
+.counter .item .icon i {
+font-size: 8rem;
+margin-right: 10px;
+color: #f8f9fa57;
+@include mixins.breakpoint(md) {
+  font-size: 5rem;
+}
+}
+
+.counter .item .content {
+flex-grow: 1;
+} 
+.counter .item .content .title {
+font-size: 3rem;
+margin: 0;
+padding-top: 0 !important;
+
+}  
 // gallery page end===================
+
