@@ -1,261 +1,223 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- Title  -->
-    <title>Home | iBlack AI</title>
-    <link rel="shortcut icon" href="assets/images/logo/logo.png" type="image/x-icon">
 
-    <!-- font awesome -->
-    <script
-      src="https://kit.fontawesome.com/00f0305dec.js"
-      crossorigin="anonymous"
-    ></script>
-    <!-- Bootstrap  -->
-    <link rel="stylesheet" href="assets/plugins/bootstrap/bootstrap.min.css" />
-    <!-- Swiper Slider  -->
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
-    />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Title  -->
+  <title>Home | iBlack AI</title>
+  <link rel="shortcut icon" href="assets/images/logo/logo.png" type="image/x-icon">
+
+  <!-- font awesome -->
+  <script src="https://kit.fontawesome.com/00f0305dec.js" crossorigin="anonymous"></script>
+  <!-- Bootstrap  -->
+  <link rel="stylesheet" href="assets/plugins/bootstrap/bootstrap.min.css" />
+  <!-- Swiper Slider  -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
   <!-- lightGallery css -->
-  <link
-  rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"
-/>
-    <!-- Custom CSS  -->
-    <link rel="stylesheet" href="assets/css/style.css" />
-    <style></style>
-  </head>
-  <body>
-    <!-- Preloader -->
-    <div class="loader-mask">
-      <div class="loader">
-        <div></div>
-        <div></div>
-      </div>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
+  <!-- Custom CSS  -->
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <style></style>
+</head>
+
+<body>
+  <!-- Preloader -->
+  <div class="loader-mask">
+    <div class="loader">
+      <div></div>
+      <div></div>
     </div>
-    <!-- Preloader -->
+  </div>
+  <!-- Preloader -->
 
-    <!-- Header Section Start-->
-    <header id="header" class="header start-0 w-100 end-0 z-3">
-      <div class="container">
-        <nav id="navbar" class="navbar navbar-expand-lg">
-          <div class="container-fluid">
-            <div class="logo" >
-              <a class="navbar-brand" href="index-loggedin.html"
-                ><img
-                  class="mx-auto"
-                  style="max-width: 115px"
-                  src="assets/images/logo/logo.png"
-                  alt="logo"
-              /></a>
-            </div>
-
-            <button
-              id="hamburger"
-              class="mt-0 navbar-toggler"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#navbarNav"
-              aria-controls="navbarNav"
-              aria-expanded="false"
-              aria-label="Toggle navigation"
-            >
-              <i class="fa-solid fa-bars"></i>
-            </button>
-            <div id="navbarNav"
-              class="nav-area  collapse navbar-collapse align-items-md-center align-items-center"
-            >
-            <ul
-            class="navbar-nav me-auto my-2 px-3 my-lg-0 navbar-nav-scroll"
-          >
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="/"
-                >Home</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="https://blog.iblackai.com/">Blog</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="pricing.html">Pricing</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle"
-                href="#"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                More
-              </a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="privacy-policy.html">Privacy Policy</a></li>
-                <li>
-                  <a class="dropdown-item " href="terms-of-use.html">Terms of use</a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="contact-us.html">Contact Us</a>
-                </li>
-              </ul>
-            </li>
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle"
-                href="#"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-              Follow Us
-              </a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item " href="https://bsky.app/profile/iblackai.com" target="_blank"><i class="pe-3 fa-brands fa-bluesky"></i> Bluesky</a></li>
-                <li>
-                  <a class="dropdown-item  " href="https://x.com/iblackAI" target="_blank"><i class="pe-3 fa-brands fa-x"></i> X</a>
-                </li>
-                <li>
-                  <a class="dropdown-item " href="https://pinterest.com/iBlackAI" target="_blank"><i class="pe-3 fa-brands fa-pinterest"></i> Pinterest</a>
-                </li>
-                <li>
-                  <a class="dropdown-item " href="https://instagram.com/iblack_ai" target="_blank"><i class="pe-3 fa-brands fa-instagram"></i> instagram</a>
-                </li>
-              </ul>
-            </li>
-            
-          </ul>
-              <div class="button-group">
-                
-                <a href="https://discord.gg/qSfJvGTWs9" target="_blank" class="btn"
-                  ><img
-                    src="assets/images/icons/discord.svg"
-                    alt=""
-                    srcset=""
-                  />
-                  Join Us on Discord</a
-                >
-                
-                <div class="user-dropdown">
-                  <div class="dropdown">
-                      <button class="btn  dropdown-toggle" type="button"
-                          id="dropdownMenuButton3" data-bs-toggle="dropdown" aria-expanded="false">
-                          <span class="user-header">
-                              <span class="image">
-                                  <img src="assets/images/avater.png" alt="">
-                              </span>            
-                              <span class="name mb-2">Mridul2422</span>
-                          </span>
-                      </button>
-                      <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">My Dashboard</a></li>
-                        <li>
-                          <a class="dropdown-item " href="#">Profile</a>
-                        </li>
-                        <li>
-                          
-                        </li>
-                        <hr>
-                        <li>
-                          <a class="dropdown-item" href="#">Logout</a>
-                        </li>
-                      </ul>
-                  </div>
-              </div>
-              </div>
-            </div>
+  <!-- Header Section Start-->
+  <header id="header" class="header start-0 w-100 end-0 z-3">
+    <div class="container">
+      <nav id="navbar" class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <div class="logo">
+            <a class="navbar-brand" href="index-loggedin.html"><img class="mx-auto" style="max-width: 115px"
+                src="assets/images/logo/logo.png" alt="logo" /></a>
           </div>
-        </nav>
-      </div>
-    </header>
-    <!-- Header Section End-->
 
-    <main>
-      <section id="hero_sec" class="hero_sec">
-        <div class="container">
-          <div class=" tool-form" id="accordionExample">
-            <div class="accordion-item">
-              <div class="accordion-header">
-               
-                <fieldset class="prompt-box mb-3">
-                  <img class="icon" src="assets/images/icons/stars.svg" alt="">
-                  <input class="prompt" name="" id="" type="text">
-                  <button class="btn dropdown-toggle" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                    <span>Expand for Options</span>
+          <button id="hamburger" class="mt-0 navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fa-solid fa-bars"></i>
+          </button>
+          <div id="navbarNav" class="nav-area  collapse navbar-collapse align-items-md-center align-items-center">
+            <ul class="navbar-nav me-auto my-2 px-3 my-lg-0 navbar-nav-scroll">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="/">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="https://blog.iblackai.com/">Blog</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="pricing.html">Pricing</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  More
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="privacy-policy.html">Privacy Policy</a></li>
+                  <li>
+                    <a class="dropdown-item " href="terms-of-use.html">Terms of use</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="contact-us.html">Contact Us</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  Follow Us
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item " href="https://bsky.app/profile/iblackai.com" target="_blank"><i
+                        class="pe-3 fa-brands fa-bluesky"></i> Bluesky</a></li>
+                  <li>
+                    <a class="dropdown-item  " href="https://x.com/iblackAI" target="_blank"><i
+                        class="pe-3 fa-brands fa-x"></i> X</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item " href="https://pinterest.com/iBlackAI" target="_blank"><i
+                        class="pe-3 fa-brands fa-pinterest"></i> Pinterest</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item " href="https://instagram.com/iblack_ai" target="_blank"><i
+                        class="pe-3 fa-brands fa-instagram"></i> instagram</a>
+                  </li>
+                </ul>
+              </li>
+
+            </ul>
+            <div class="button-group">
+
+              <a href="https://discord.gg/qSfJvGTWs9" target="_blank" class="btn"><img
+                  src="assets/images/icons/discord.svg" alt="" srcset="" />
+                Join Us on Discord</a>
+
+              <div class="user-dropdown">
+                <div class="dropdown">
+                  <button class="btn  dropdown-toggle" type="button" id="dropdownMenuButton3" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    <span class="user-header">
+                      <span class="image">
+                        <img src="assets/images/avater.png" alt="">
+                      </span>
+                      <span class="name mb-2">Mridul2422</span>
+                    </span>
                   </button>
-                </fieldset>
-                <fieldset class="mb-3 text-center">
-                  <a href="login.html" class="btn btn-effect-2"
-                  >Start Generating
-                  <img src="assets/images/icons/power.svg" alt="" srcset=""
-                /></a>
-                </fieldset>
-              </div>
-              <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                <div class="expend-options">
-                  <fieldset class="mb-3">
-                    <label for="">Model/Engine</label>
-                    <select class="" name="" id="">
-                      <option value="" selected>Dalle 3</option>
-                      <option value="">option 1</option>
-                      <option value="">option 2</option>
-                      <option value="">option 3</option>
-                    </select>
-                  </fieldset>
-                  <fieldset class="mb-3">
-                    <label for="">Image Size</label>
-                    <select class="" name="" id="">
-                      <option value="" selected>1024*024</option>
-                      <option value="">option 1</option>
-                      <option value="">option 2</option>
-                      <option value="">option 3</option>
-                    </select>
-                  </fieldset>
-                  <fieldset class="mb-3">
-                    <label for="">Art Style</label>
-                    <select class="" name="" id="">
-                      <option value="" selected hidden>--</option>
-                      <option value="">option 1</option>
-                      <option value="">option 2</option>
-                      <option value="">option 3</option>
-                    </select>
-                  </fieldset>
-                  <fieldset class="mb-3">
-                    <label for="">Lighting Style</label>
-                    <select class="" name="" id="">
-                      <option value="" selected hidden>--</option>
-                      <option value="">option 1</option>
-                      <option value="">option 2</option>
-                      <option value="">option 3</option>
-                    </select>
-                  </fieldset>
-                  <fieldset class="mb-3">
-                    <label for="">Mood</label>
-                    <select class="" name="" id="">
-                      <option value="" selected hidden>--</option>
-                      <option value="">option 1</option>
-                      <option value="">option 2</option>
-                      <option value="">option 3</option>
-                    </select>
-                  </fieldset>
-                  <fieldset class="mb-3">
-                    <label for="">visibility</label>
-                    <select class="" name="" id="">
-                      <option value="" selected  hidden>--</option>
-                      <option value="">option 1</option>
-                      <option value="">option 2</option>
-                      <option value="">option 3</option>
-                    </select>
-                  </fieldset>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">My Dashboard</a></li>
+                    <li>
+                      <a class="dropdown-item " href="#">Profile</a>
+                    </li>
+                    <li>
+
+                    </li>
+                    <hr>
+                    <li>
+                      <a class="dropdown-item" href="#">Logout</a>
+                    </li>
+                  </ul>
                 </div>
               </div>
             </div>
-           
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <!-- Header Section End-->
+
+  <main>
+    <section id="hero_sec" class="hero_sec">
+      <div class="container">
+        <div class=" tool-form" id="accordionExample">
+          <div class="accordion-item">
+            <div class="accordion-header">
+
+              <fieldset class="prompt-box mb-3">
+                <img class="icon" src="assets/images/icons/stars.svg" alt="">
+                <input class="prompt" name="" id="" type="text">
+                <button class="btn dropdown-toggle" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                  <span>Expand for Options</span>
+                </button>
+              </fieldset>
+              <fieldset class="mb-3 text-center">
+                <a href="login.html" class="btn btn-effect-2">Start Generating
+                  <img src="assets/images/icons/power.svg" alt="" srcset="" /></a>
+              </fieldset>
+            </div>
+            <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+              <div class="expend-options">
+                <fieldset class="mb-3">
+                  <label for="">Model/Engine</label>
+                  <select class="" name="" id="">
+                    <option value="" selected>Dalle 3</option>
+                    <option value="">option 1</option>
+                    <option value="">option 2</option>
+                    <option value="">option 3</option>
+                  </select>
+                </fieldset>
+                <fieldset class="mb-3">
+                  <label for="">Image Size</label>
+                  <select class="" name="" id="">
+                    <option value="" selected>1024*024</option>
+                    <option value="">option 1</option>
+                    <option value="">option 2</option>
+                    <option value="">option 3</option>
+                  </select>
+                </fieldset>
+                <fieldset class="mb-3">
+                  <label for="">Art Style</label>
+                  <select class="" name="" id="">
+                    <option value="" selected hidden>--</option>
+                    <option value="">option 1</option>
+                    <option value="">option 2</option>
+                    <option value="">option 3</option>
+                  </select>
+                </fieldset>
+                <fieldset class="mb-3">
+                  <label for="">Lighting Style</label>
+                  <select class="" name="" id="">
+                    <option value="" selected hidden>--</option>
+                    <option value="">option 1</option>
+                    <option value="">option 2</option>
+                    <option value="">option 3</option>
+                  </select>
+                </fieldset>
+                <fieldset class="mb-3">
+                  <label for="">Mood</label>
+                  <select class="" name="" id="">
+                    <option value="" selected hidden>--</option>
+                    <option value="">option 1</option>
+                    <option value="">option 2</option>
+                    <option value="">option 3</option>
+                  </select>
+                </fieldset>
+                <fieldset class="mb-3">
+                  <label for="">visibility</label>
+                  <select class="" name="" id="">
+                    <option value="" selected hidden>--</option>
+                    <option value="">option 1</option>
+                    <option value="">option 2</option>
+                    <option value="">option 3</option>
+                  </select>
+                </fieldset>
+              </div>
+            </div>
           </div>
 
-          <!-- <form class="tool-form" action="">
+        </div>
+
+        <!-- <form class="tool-form" action="">
 
             <fieldset class="prompt-box mb-3">
               <img class="icon" src="assets/images/icons/stars.svg" alt="">
@@ -333,384 +295,440 @@
             
          
           </form> -->
-          
-          
-        </div>
-       
-      </section>
 
-      <section id="action" class="actiontogen bg-black">
-        <div class="container design-area">
-          <div class="row py-1 px-1 justify-content-center align-items-center">
-            <div class="col-md-6 border-1 video">
-              <img src="assets/images/Home - Iblackai 1 (1).png" alt="" />
-              <a class="various fancybox play" href="" data-fancybox  data-src="#video-popup" ><i class="fa-solid fa-play"></i></a>
-            </div>
-            <div class="col-md-6 text">
-              <h2 class="">
-                Enhance your creativity with our powerful Image <br />
-                <span class="brand">Generation tool.</span>
-              </h2>
-              <a href="login.html" class="btn btn-effect-2"
-                >Start Generating
-                <img src="assets/images/icons/power.svg" alt="" srcset=""
-              /></a>
-            </div>
-          </div>
-        </div>
-      </section>
-      <div style="display: none;" id="video-popup">
-        <video controls autoplay loop muted playsinline style="width:100%; height:auto;">
-          <source src="assets/video/ai-image-generating.mp4" type="video/mp4">
-          Your browser does not support the video tag.
-        </video>
+
       </div>
-      <section id="featured" class="featured-section">
-        <div class="container mb-5">
-          <div class="section-text text-center">
-            <span class="btn btn-effect-3"> Features</span>
-            <h2 class="text-center">
-              Elevate Your Potential With Our
-              <span class="text-effect-2">Features</span>
-            </h2>
-          </div>
-        </div>
-        <div class="featured-area container mt-3">
-          <div class="row box">
-            <div class="col-md-4 item">
-              <div class="content">
-                <div class="icon">
-                  <img src="assets/images/icons/flower.svg" alt="" />
-                </div>
-                <div class="text">
-                  <h3>High-Quality Image Generation</h3>
-                  <p>
-                    Our AI creates high-quality, precise images from your input
-                    with stunning detail.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4 item">
-              <div class="content">
-                <div class="icon">
-                  <img src="assets/images/icons/flower.svg" alt="" />
-                </div>
-                <div class="text">
-                  <h3>AI Generator Toolkit</h3>
-                  <p>
-                    10+ AI image generators in one powerful creative toolkit
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4 item">
-              <div class="content">
-                <div class="icon">
-                  <img src="assets/images/icons/flower.svg" alt="" />
-                </div>
-                <div class="text">
-                  <h3>Multiple Sizes Supported</h3>
-                  <p>
-                    Generate images in various sizes, perfect for web, print, social media, and personal projects.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4 item">
-              <div class="content">
-                <div class="icon">
-                  <img src="assets/images/icons/flower.svg" alt="" />
-                </div>
-                <div class="text">
-                  <h3>User-Friendly Interface</h3>
-                  <p>
-                    Our platform is easy to use—just describe your idea, and our AI creates the image.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4 item">
-              <div class="content">
-                <div class="icon">
-                  <img src="assets/images/icons/flower.svg" alt="" />
-                </div>
-                <div class="text">
-                  <h3>Image Saving</h3>
-                  <p>
-                    Save, download, and share your iBlackAI creations effortlessly.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4 item">
-              <div class="content">
-                <div class="icon">
-                  <img src="assets/images/icons/flower.svg" alt="" />
-                </div>
-                <div class="text">
-                  <h3>Flexible Pricing</h3>
-                  <p>
-                    Choose from flexible pricing plans tailored for casual creators and professionals alike.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section id="gallery" class="gallery-section">
-        <div class="container mb-5">
-          <div class="section-text text-center">
-            <span class="btn btn-effect-3"> Gallery</span>
-            <h2 class="text-center">
-              Our Platform
-              <span class="text-effect-2">Gallery</span>
-            </h2>
-          </div>
-        </div>
-        <div class="gallery-area container mt-3">
-          <div class="grid-container">
-            <div class="grid-item column-1">
-              <div class="item">
-                <img src="assets/images/gallery/1.png" alt="" />
-              </div>
-              <div class="item">
-                <img src="assets/images/gallery/2.png" alt="" />
-              </div>
-              <div class="item">
-                <img src="assets/images/gallery/3.png" alt="" />
-              </div>
-              <div class="item">
-                <img src="assets/images/gallery/4.png" alt="" />
-              </div>
-            </div>
-            <div class="grid-item column-2">
-              <div class="item">
-                <img src="assets/images/gallery/5.png" alt="" />
-              </div>
-              <div class="item">
-                <img src="assets/images/gallery/6.png" alt="" />
-              </div>
-              <div class="item">
-                <img src="assets/images/gallery/7.png" alt="" />
-              </div>
-              <div class="item">
-                <img src="assets/images/gallery/8.png" alt="" />
-              </div>
-              <div class="item">
-                <img src="assets/images/gallery/9.png" alt="" />
-              </div>
-            </div>
-            <div class="grid-item column-3">
-              <div class="item">
-                <img src="assets/images/gallery/10.png" alt="" />
-              </div>
-              <div class="item">
-                <img src="assets/images/gallery/11.png" alt="" />
-              </div>
-              <div class="item">
-                <img src="assets/images/gallery/12.png" alt="" />
-              </div>
-              <div class="item">
-                <img src="assets/images/gallery/23.jpeg" alt="" />
-              </div>
-            </div>
-            <div class="grid-item column-4">
-              <div class="item">
-                <img src="assets/images/gallery/14.png" alt="" />
-              </div>
-              <div class="item">
-                <img src="assets/images/gallery/15.png" alt="" />
-              </div>
-              <div class="item">
-                <img src="assets/images/gallery/16.png" alt="" />
-              </div>
-              <div class="item">
-                <img src="assets/images/gallery/17.png" alt="" />
-              </div>
-              <div class="item">
-                <img src="assets/images/gallery/18.png" alt="" />
-              </div>
-            </div>
-            <div class="grid-item column-5">
-             
-              <div class="item">
-                <img src="assets/images/gallery/19.png" alt="" />
-              </div>
-              <div class="item">
-                <img src="assets/images/gallery/20.png" alt="" />
-              </div>
-              <div class="item">
-                <img src="assets/images/gallery/21.png" alt="" />
-              </div>
-              <div class="item">
-                <img src="assets/images/gallery/22.png" alt="" />
-              </div>
-            </div>
-          </div>
-          <div class="button-group text-center">
-             <a href="https://iblackai.com/images/explore" class="btn btn-effect-2">View all generated images <img src="assets/images/icons/power.svg" alt=""></a>
-          </div>
-        </div>
-      </section>
 
-      <section id="joinus" class="joinus bg-black">
-        <div class="container design-area">
-          <div class="row py-1 px-1 justify-content-between align-items-center">
-            <div class="col-md-6 border-1 circle-area">
-              <div class="circle">
-                <div class="outer">
+    </section>
 
-                  <div class="inner">
-                    <img class="inner-item" src="assets/images/circle/inner-1.png" alt="">
-                    <img class="inner-item" src="assets/images/circle/inner-2.png" alt="">
-                    <img class="inner-item" src="assets/images/circle/inner-3.png" alt="">
-                    <img class="inner-item" src="assets/images/circle/inner-4.png" alt="">
-                    <div class="center">
-                      
-                    </div>
-                   
+    <section id="action" class="actiontogen bg-black">
+      <div class="container design-area">
+        <div class="row py-1 px-1 justify-content-center align-items-center">
+          <div class="col-md-6 border-1 video">
+            <img src="assets/images/Home - Iblackai 1 (1).png" alt="" />
+            <a class="various fancybox play" href="" data-fancybox data-src="#video-popup"><i
+                class="fa-solid fa-play"></i></a>
+          </div>
+          <div class="col-md-6 text">
+            <h2 class="">
+              Enhance your creativity with our powerful Image <br />
+              <span class="brand">Generation tool.</span>
+            </h2>
+            <a href="login.html" class="btn btn-effect-2">Start Generating
+              <img src="assets/images/icons/power.svg" alt="" srcset="" /></a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div style="display: none;" id="video-popup">
+      <video controls autoplay loop muted playsinline style="width:100%; height:auto;">
+        <source src="assets/video/ai-image-generating.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+    <section id="featured" class="featured-section">
+      <div class="container mb-5">
+        <div class="section-text text-center">
+          <span class="btn btn-effect-3"> Features</span>
+          <h2 class="text-center">
+            Elevate Your Potential With Our
+            <span class="text-effect-2">Features</span>
+          </h2>
+        </div>
+      </div>
+      <div class="featured-area container mt-3">
+        <div class="row box">
+          <div class="col-md-4 item">
+            <div class="content">
+              <div class="icon">
+                <img src="assets/images/icons/flower.svg" alt="" />
+              </div>
+              <div class="text">
+                <h3>High-Quality Video Generation</h3>
+                <p>
+                  Input your vision. Get crisp, high-def videos — all powered by AI.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 item">
+            <div class="content">
+              <div class="icon">
+                <img src="assets/images/icons/flower.svg" alt="" />
+              </div>
+              <div class="text">
+                <h3>iBlackAI Assistant 1.0</h3>
+                <p>
+                  Say less. Our chatbot crafts fire prompts in a flash!
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 item">
+            <div class="content">
+              <div class="icon">
+                <img src="assets/images/icons/flower.svg" alt="" />
+              </div>
+              <div class="text">
+                <h3>Your Imagination, Powered by iBlackAI</h3>
+                <p>
+                  Design, inspire, and create — from characters to graphics, and beyond.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 item">
+            <div class="content">
+              <div class="icon">
+                <img src="assets/images/icons/flower.svg" alt="" />
+              </div>
+              <div class="text">
+                <h3>High-Quality Image Generation</h3>
+                <p>
+                  Our AI creates high-quality, precise images from your input
+                  with stunning detail.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 item">
+            <div class="content">
+              <div class="icon">
+                <img src="assets/images/icons/flower.svg" alt="" />
+              </div>
+              <div class="text">
+                <h3>AI Generator Toolkit</h3>
+                <p>
+                  15+ AI Image/Video Generators in one powerful creative toolkit.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 item">
+            <div class="content">
+              <div class="icon">
+                <img src="assets/images/icons/flower.svg" alt="" />
+              </div>
+              <div class="text">
+                <h3>Multiple Sizes Supported</h3>
+                <p>
+                  Generate images/videos in various sizes, perfect for web, print, social media and personal projects.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 item">
+            <div class="content">
+              <div class="icon">
+                <img src="assets/images/icons/flower.svg" alt="" />
+              </div>
+              <div class="text">
+                <h3>User-Friendly Interface</h3>
+                <p>
+                  Our platform is easy to use-just describe your idea, and AI creates the image/video.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 item">
+            <div class="content">
+              <div class="icon">
+                <img src="assets/images/icons/flower.svg" alt="" />
+              </div>
+              <div class="text">
+                <h3>Image/Video Sharing</h3>
+                <p>
+                  Save, download, and share your iBlackAI creations effortlessly.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 item">
+            <div class="content">
+              <div class="icon">
+                <img src="assets/images/icons/flower.svg" alt="" />
+              </div>
+              <div class="text">
+                <h3>Flexible Pricing</h3>
+                <p>
+                  Choose from flexible pricing plans tailored for casual creators and professionals alike.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="action" class="actiontogen bg-black">
+      <div class="container design-area">
+        <div class="row py-1 px-1 justify-content-center align-items-center">
+          <div class="col-md-6 border-1 video">
+            <img src="assets/images/Home - Iblackai 1 (1).png" alt="" />
+            <a class="various fancybox play" href="" data-fancybox data-src="#video-popup"><i
+                class="fa-solid fa-play"></i></a>
+          </div>
+          <div class="col-md-6 text">
+            <h2 class="">
+              Boost your creativity with our powerful AI video
+              <span class="brand">Generation tools.</span>
+            </h2>
+            <a href="login.html" class="btn btn-effect-2">Start Generating
+              <img src="assets/images/icons/power.svg" alt="" srcset="" /></a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="gallery" class="gallery-section">
+      <div class="container mb-5">
+        <div class="section-text text-center">
+          <span class="btn btn-effect-3"> Gallery</span>
+          <h2 class="text-center">
+            Our Platform
+            <span class="text-effect-2">Gallery</span>
+          </h2>
+        </div>
+      </div>
+      <div class="gallery-area container mt-3">
+        <div class="grid-container">
+          <div class="grid-item column-1">
+            <div class="item">
+              <img src="assets/images/gallery/1.png" alt="" />
+            </div>
+            <div class="item">
+              <img src="assets/images/gallery/2.png" alt="" />
+            </div>
+            <div class="item">
+              <img src="assets/images/gallery/3.png" alt="" />
+            </div>
+            <div class="item">
+              <img src="assets/images/gallery/4.png" alt="" />
+            </div>
+          </div>
+          <div class="grid-item column-2">
+            <div class="item">
+              <img src="assets/images/gallery/5.png" alt="" />
+            </div>
+            <div class="item">
+              <img src="assets/images/gallery/6.png" alt="" />
+            </div>
+            <div class="item">
+              <img src="assets/images/gallery/7.png" alt="" />
+            </div>
+            <div class="item">
+              <img src="assets/images/gallery/8.png" alt="" />
+            </div>
+            <div class="item">
+              <img src="assets/images/gallery/9.png" alt="" />
+            </div>
+          </div>
+          <div class="grid-item column-3">
+            <div class="item">
+              <img src="assets/images/gallery/10.png" alt="" />
+            </div>
+            <div class="item">
+              <img src="assets/images/gallery/11.png" alt="" />
+            </div>
+            <div class="item">
+              <img src="assets/images/gallery/12.png" alt="" />
+            </div>
+            <div class="item">
+              <img src="assets/images/gallery/23.jpeg" alt="" />
+            </div>
+          </div>
+          <div class="grid-item column-4">
+            <div class="item">
+              <img src="assets/images/gallery/14.png" alt="" />
+            </div>
+            <div class="item">
+              <img src="assets/images/gallery/15.png" alt="" />
+            </div>
+            <div class="item">
+              <img src="assets/images/gallery/16.png" alt="" />
+            </div>
+            <div class="item">
+              <img src="assets/images/gallery/17.png" alt="" />
+            </div>
+            <div class="item">
+              <img src="assets/images/gallery/18.png" alt="" />
+            </div>
+          </div>
+          <div class="grid-item column-5">
+
+            <div class="item">
+              <img src="assets/images/gallery/19.png" alt="" />
+            </div>
+            <div class="item">
+              <img src="assets/images/gallery/20.png" alt="" />
+            </div>
+            <div class="item">
+              <img src="assets/images/gallery/21.png" alt="" />
+            </div>
+            <div class="item">
+              <img src="assets/images/gallery/22.png" alt="" />
+            </div>
+          </div>
+        </div>
+        <div class="button-group text-center">
+          <a href="https://iblackai.com/images/explore" class="btn btn-effect-2">View all generated images <img
+              src="assets/images/icons/power.svg" alt=""></a>
+        </div>
+      </div>
+    </section>
+
+    <section id="joinus" class="joinus bg-black">
+      <div class="container design-area">
+        <div class="row py-1 px-1 justify-content-between align-items-center">
+          <div class="col-md-6 border-1 circle-area">
+            <div class="circle">
+              <div class="outer">
+
+                <div class="inner">
+                  <img class="inner-item" src="assets/images/circle/inner-1.png" alt="">
+                  <img class="inner-item" src="assets/images/circle/inner-2.png" alt="">
+                  <img class="inner-item" src="assets/images/circle/inner-3.png" alt="">
+                  <img class="inner-item" src="assets/images/circle/inner-4.png" alt="">
+                  <div class="center">
+
                   </div>
 
-                 
                 </div>
 
-                <img class="outer-item" src="assets/images/circle/outer-1.png" alt="">
-                <img class="outer-item" src="assets/images/circle/outer-2.png" alt="">
-                <img class="outer-item" src="assets/images/circle/outer-3.png" alt="">
-                <img class="outer-item" src="assets/images/circle/outer-4.png" alt="">
+
               </div>
-              <img class="discord" src="assets/images/circle/discord.png" alt="" srcset="">
-            </div>
-            <div class="col-md-6 text">
-              <h2>
-                Become part of a thriving <br /> network of <span class="brand">innovators!</span>
-              </h2>
-              <p class="mt-3 mb-3 paragraph">iBlack AI's influence goes beyond our cutting-edge tools—we're built on one of the most supportive AI communities online, and our dedication to it runs deep.</p>
 
-              <a href="login.html" class="btn btn-effect-1"
-                >Join Now
-                <img src="assets/images/icons/power.svg" alt="" srcset=""
-              /></a>
-          
-              
-              
+              <img class="outer-item" src="assets/images/circle/outer-1.png" alt="">
+              <img class="outer-item" src="assets/images/circle/outer-2.png" alt="">
+              <img class="outer-item" src="assets/images/circle/outer-3.png" alt="">
+              <img class="outer-item" src="assets/images/circle/outer-4.png" alt="">
             </div>
-           
+            <img class="discord" src="assets/images/circle/discord.png" alt="" srcset="">
           </div>
+          <div class="col-md-6 text">
+            <h2>
+              Become part of a thriving <br /> network of <span class="brand">innovators!</span>
+            </h2>
+            <p class="mt-3 mb-3 paragraph">iBlack AI's influence goes beyond our cutting-edge tools—we're built on one
+              of the most supportive AI communities online, and our dedication to it runs deep.</p>
+
+            <a href="login.html" class="btn btn-effect-1">Join Now
+              <img src="assets/images/icons/power.svg" alt="" srcset="" /></a>
+
+
+
+          </div>
+
         </div>
-      </section>
-      <section id="action2" class=" actiontogen2 bg-black">
-        <div class="container design-area">
-          <div class="row py-1 px-1 justify-content-center align-items-center">
-            <div class="col-md-6 text">
-              <h2>
-                Power your creativity <br />with
-                <span class="brand">iBlack AI.</span>
-              </h2>
-              <a href="login.html" class="btn btn-effect-2"
-                >Start Generating
-                <img src="assets/images/icons/power.svg" alt="" srcset=""
-              /></a>
-              <br />
-              <span class="credit"
-                ><i class="fa-regular fa-credit-card"></i> No Credit Card
-                Needed</span
-              >
-            </div>
-            <div class="col-md-6 border-1 video">
-              <img src="assets/images//home-iblackai-hero.png" alt="" />
-            </div>
+      </div>
+    </section>
+    <section id="action2" class=" actiontogen2 bg-black">
+      <div class="container design-area">
+        <div class="row py-1 px-1 justify-content-center align-items-center">
+          <div class="col-md-6 text">
+            <h2>
+              Power your creativity <br />with
+              <span class="brand">iBlack AI.</span>
+            </h2>
+            <a href="login.html" class="btn btn-effect-2">Start Generating
+              <img src="assets/images/icons/power.svg" alt="" srcset="" /></a>
+            <br />
+            <span class="credit"><i class="fa-regular fa-credit-card"></i> No Credit Card
+              Needed</span>
           </div>
-        </div>
-      </section>
-
-
-
-    </main>
-    <footer id="footer" class="footer pt-3" >
-      <div class="company-info container mb-5 mt-5 px-5">
-        <div class="row ">
-          <div class="col-6 text-center">
-            <div class="logo" style="width: 112px;">
-              <img src="assets//images/logo/logo.png" alt=""  />
-            </div>
-          </div>
-          <div class="col-6 text-end">
-            <div class="social me-auto letter-space-3">
-              <a href="https://bsky.app/profile/iblackai.com" class="btn btn-effect-4"><i class="fa-brands fa-bluesky"></i></a>
-              <a href="https://x.com/iblackAI"  class="btn btn-effect-4"><i class="fa-brands fa-x"></i></a>
-              <a href="https://pinterest.com/iBlackAI"  class="btn btn-effect-4"><i class="fa-brands fa-pinterest"></i></a>
-              <a href="https://instagram.com/iblack_ai"  class="btn btn-effect-4"><i class="fa-brands fa-instagram"></i></a>
-            </div>
+          <div class="col-md-6 border-1 video">
+            <img src="assets/images//home-iblackai-hero.png" alt="" />
           </div>
         </div>
       </div>
-      <div class="quick-links container mb-5 px-5">
-        <div class="row g-3">
-          <div class="col-md-3 ">
-            <h3 class="title">Explore</h3>
-            <ul class="footer-menu">
-              <li><a href="faq.html">FAQs</a></li>
-              <li><a href="https://iblackai.com/features">Features</a></li>
-              <li><a href="pricing.html">Pricing</a></li>
-              <li><a href="art-challenge.html">Art Challenge</a></li>
-            </ul>
-          </div>
-          <div class="col-md-3">
-            <h3 class="title">Solutions</h3>
-            <ul class="footer-menu">
-              <li><a href="https://iblackai.com/about-us">About Us</a></li>
-              <li><a href="contact-us.html">Contact Us</a></li>
-              <li><a href="careers.html">Careers</a></li>
-              <li><a href="refer-a-friend.html">Refer a Friend</a></li>
-              <li><a href="ambassador-program.html">Ambassador Program</a></li>
-            </ul>
-          </div>
-          <div class="col-md-3 ">
+    </section>
 
-            <h3 class="title">About Us</h3>
-            <ul class="footer-menu">
-              <li><a href="privacy-policy.html">Privacy policy</a></li>
-              <li><a href="terms-of-use.html">Terms of use</a></li>
-              <li><a href="cookies-policy.html">Cookies Policy</a></li>
-              <li><a href="copyright-policy.html">Copyright Policy</a></li>
-            </ul>
+
+
+  </main>
+  <footer id="footer" class="footer pt-3">
+    <div class="company-info container mb-5 mt-5 px-5">
+      <div class="row ">
+        <div class="col-6 text-center">
+          <div class="logo" style="width: 112px;">
+            <img src="assets//images/logo/logo.png" alt="" />
           </div>
-          <div class="col-md-3 ">
-            <h3 class="title">Resources</h3>
-            <ul class="footer-menu">
-              <li><a href="contact-us.html">Report a Problem</a></li>
-              <li><a href="https://discord.com/channels/1327915056121253908/1327925852977233940">Technical Support</a></li>
-              <li><a href="https://discord.com/channels/1327915056121253908/1327915056855519292">Billing Support</a></li>
-              <li><a href="https://discord.com/channels/1327915056121253908/1327915056855519292">Submit a Ticket</a></li>
-            </ul>
+        </div>
+        <div class="col-6 text-end">
+          <div class="social me-auto letter-space-3">
+            <a href="https://bsky.app/profile/iblackai.com" class="btn btn-effect-4"><i
+                class="fa-brands fa-bluesky"></i></a>
+            <a href="https://x.com/iblackAI" class="btn btn-effect-4"><i class="fa-brands fa-x"></i></a>
+            <a href="https://pinterest.com/iBlackAI" class="btn btn-effect-4"><i class="fa-brands fa-pinterest"></i></a>
+            <a href="https://instagram.com/iblack_ai" class="btn btn-effect-4"><i
+                class="fa-brands fa-instagram"></i></a>
           </div>
         </div>
       </div>
-      <div class="copyright container pb-3 px-5">
+    </div>
+    <div class="quick-links container mb-5 px-5">
+      <div class="row g-3">
+        <div class="col-md-3 ">
+          <h3 class="title">Explore</h3>
+          <ul class="footer-menu">
+            <li><a href="faq.html">FAQs</a></li>
+            <li><a href="https://iblackai.com/features">Features</a></li>
+            <li><a href="pricing.html">Pricing</a></li>
+            <li><a href="art-challenge.html">Art Challenge</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3">
+          <h3 class="title">Solutions</h3>
+          <ul class="footer-menu">
+            <li><a href="https://iblackai.com/about-us">About Us</a></li>
+            <li><a href="contact-us.html">Contact Us</a></li>
+            <li><a href="careers.html">Careers</a></li>
+            <li><a href="refer-a-friend.html">Refer a Friend</a></li>
+            <li><a href="ambassador-program.html">Ambassador Program</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3 ">
 
-        <div class="row">
-          <div class="col-md-12 text-center">
-            <p class="copyright-text">
-              &copy; Iblackai 2025. All Rights Reserved
-            </p>
-          </div>
+          <h3 class="title">About Us</h3>
+          <ul class="footer-menu">
+            <li><a href="privacy-policy.html">Privacy policy</a></li>
+            <li><a href="terms-of-use.html">Terms of use</a></li>
+            <li><a href="cookies-policy.html">Cookies Policy</a></li>
+            <li><a href="copyright-policy.html">Copyright Policy</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3 ">
+          <h3 class="title">Resources</h3>
+          <ul class="footer-menu">
+            <li><a href="contact-us.html">Report a Problem</a></li>
+            <li><a href="https://discord.com/channels/1327915056121253908/1327925852977233940">Technical Support</a>
+            </li>
+            <li><a href="https://discord.com/channels/1327915056121253908/1327915056855519292">Billing Support</a></li>
+            <li><a href="https://discord.com/channels/1327915056121253908/1327915056855519292">Submit a Ticket</a></li>
+          </ul>
         </div>
       </div>
-    </footer>
+    </div>
+    <div class="copyright container pb-3 px-5">
 
-    <!-- JQuery -->
-    <script src="assets/plugins/jquery/jquery-3.7.1.min.js"></script>
-    <!-- bootstrap -->
-    <script src="assets/plugins/bootstrap/popper.min.js"></script>
-    <script src="assets/plugins/bootstrap/bootstrap.bundle.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
-    <script>
-        Fancybox.bind('.various', {
-                // Your custom options for a specific gallery
-                type: "iframe", //<--added
+      <div class="row">
+        <div class="col-md-12 text-center">
+          <p class="copyright-text">
+            &copy; Iblackai 2025. All Rights Reserved
+          </p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JQuery -->
+  <script src="assets/plugins/jquery/jquery-3.7.1.min.js"></script>
+  <!-- bootstrap -->
+  <script src="assets/plugins/bootstrap/popper.min.js"></script>
+  <script src="assets/plugins/bootstrap/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+  <script>
+    Fancybox.bind('.various', {
+      // Your custom options for a specific gallery
+      type: "iframe", //<--added
       // maxWidth: 800,
       // maxHeight: 600,
       fitToView: true,
@@ -720,22 +738,17 @@
       closeClick: false,
       openEffect: 'none',
       closeEffect: 'none'
-        });
+    });
 
-    </script>
-    <!-- swiper -->
-    
-    <script
-      type="module"
-      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
-    ></script>
-    <script
-      nomodule
-      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
-    ></script>
-    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+  </script>
+  <!-- swiper -->
 
-    <!-- Custom JS  -->
-    <script src="assets/js/script.js"></script>
-  </body>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+
+  <!-- Custom JS  -->
+  <script src="assets/js/script.js"></script>
+</body>
+
 </html>
